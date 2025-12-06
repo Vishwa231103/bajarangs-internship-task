@@ -1,0 +1,147 @@
+
+.dashboard-gradient {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+/* Navbar – Glassmorphism Effect */
+
+.navbar {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+/* Search Box – Premium Look */
+
+.search-box {
+  background: white;
+  border-radius: 50px;
+  padding: 18px 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.search-box:focus {
+  outline: none;
+  border-color: #a78bfa;
+  box-shadow: 0 0 0 4px rgba(167, 139, 250, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Task Card – Floating & Hover Effect */
+.task-card {
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.task-card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 25px 50px rgba(102, 126, 234, 0.25);
+  border-color: rgba(102, 126, 234, 0.2);
+}
+
+/* Task Header Gradient */
+
+.task-header {
+  background: linear-gradient(120deg, #667eea 0%, #764ba2 100%);
+  padding: 24px;
+  color: white;
+}
+
+/* Status Badges */
+
+.status-badge {
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+}
+
+.status-pending {
+  background: #fff4c8;
+  color: #9c7a00;
+  border: 1px solid #ffe08a;
+}
+
+.status-completed {
+  background: #d4edda;
+  color: #0f5132;
+  border: 1px solid #a3e6b5;
+}
+
+/* Modal Overlay – Dark Blur Background */
+
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Modal Content – Premium Card */
+
+.modal-content {
+  background: white;
+  border-radius: 28px;
+  padding: 40px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
+  max-width: 540px;
+  width: 92%;
+  border: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+/* Form Inputs in Modal */
+
+.modal-content input,
+.modal-content textarea,
+.modal-content select {
+  width: 100%;
+  padding: 18px 20px;
+  border: 2px solid #e2e8f0;
+  border-radius: 18px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+  background: #fafafa;
+}
+
+.modal-content input:focus,
+.modal-content textarea:focus,
+.modal-content select:focus {
+  outline: none;
+  border-color: #667eea;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Empty State */
+
+.empty-state {
+  color: #94a3b8;
+  font-size: 8rem;
+  font-weight: 900;
+  opacity: 0.3;
+  margin-bottom: 20px;
+}
+
+/* Responsive Adjustments */
+
+@media (max-width: 768px) {
+  .search-box {
+    width: 100%;
+  }
+  .task-card:hover {
+    transform: translateY(-6px);
+  }
+}
